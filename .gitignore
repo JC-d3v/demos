@@ -1,5 +1,5 @@
-test/
-demos/
+_test/
+_demos/
 *.mp4
 *.m4v
 *.jpg

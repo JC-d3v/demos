@@ -12,6 +12,14 @@ html {
    text-align: center;
    content: 'Challenge by Frontend Mentor -- Coded by JC-D<3';
 }
+
+.back {
+   margin-top: 20px;
+   max-width: 25px;
+   max-height: 25px;
+   text-align: center;
+}
+
 :root {
    --dk-cyan: hsl(185, 75%, 39%);
    --vdk-desat-blue: hsl(229, 23%, 23%);
@@ -68,9 +76,11 @@ body {
    font-size: 2rem;
    font-weight: 700;
 }
+
 .city {
    grid-area: mid-2;
 }
+
 .age,
 .city {
    font-weight: 400;
@@ -84,6 +94,7 @@ body {
    text-align: center;
    margin-top: 40px;
 }
+
 .followers {
    grid-area: bot1;
    display: flex;
@@ -95,16 +106,19 @@ body {
    display: flex;
    flex-direction: column;
 }
+
 .photos {
    grid-area: bot3;
    display: flex;
    flex-direction: column;
 }
+
 .data {
    font-size: 2.2rem;
    font-weight: 700;
    padding-bottom: 5px;
 }
+
 .desc {
    place-self: stretch;
    font-size: 1rem;

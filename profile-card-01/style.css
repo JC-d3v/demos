@@ -1,0 +1,113 @@
+* {
+   padding: 0;
+   box-sizing: border-box;
+   margin: 0;
+}
+html {
+   font-size: 62.5%;
+}
+.jc::after {
+   margin-top: 10px;
+   font-size: 1rem;
+   text-align: center;
+   content: 'Challenge by Frontend Mentor -- Coded by JC-D<3';
+}
+:root {
+   --dk-cyan: hsl(185, 75%, 39%);
+   --vdk-desat-blue: hsl(229, 23%, 23%);
+   --dk-gr-blue: hsl(227, 10%, 46%);
+   --dk-gray: hsl(0, 0%, 59%);
+}
+
+body {
+   display: grid;
+   place-content: center;
+   min-height: 100vh;
+   text-align: center;
+   background-color: var(--dk-cyan);
+   font-family: 'kumbh Sans', sans-serif;
+   font-size: 3rem;
+   color: black;
+   background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+   background-repeat: no-repeat, no-repeat;
+   background-position: calc(50% - 500px) -500px, calc(50% + 450px) calc(100% + 550px);
+}
+
+.card {
+   display: grid;
+   justify-content: center;
+   grid-template-columns: 300px;
+   grid-template-areas: 'top' 'mid-1' 'mid-2' 'bot';
+   justify-content: center;
+   border-radius: 20px;
+   overflow: hidden;
+   background: white url(./images/bg-pattern-card.svg) repeat-x;
+   max-width: 300px;
+   box-shadow: 3px 10px 8px 4px rgba(0, 0, 0, 0.269);
+}
+
+.pic {
+   grid-area: top;
+   place-self: center;
+   margin: 80px auto 30px auto;
+   padding: 0px;
+   border: 8px solid white;
+   border-radius: 50%;
+   text-align: center;
+   /* width: 100%; */
+   overflow: hidden;
+   display: block;
+   width: 110px;
+   height: 110px;
+}
+
+.person {
+   grid-area: mid-1;
+   place-self: center;
+   text-align: center;
+   font-size: 2rem;
+   font-weight: 700;
+}
+.city {
+   grid-area: mid-2;
+}
+.age,
+.city {
+   font-weight: 400;
+}
+
+.social {
+   grid-area: bot;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-areas: 'bot1 bot2 bot3';
+   text-align: center;
+   margin-top: 40px;
+}
+.followers {
+   grid-area: bot1;
+   display: flex;
+   flex-direction: column;
+}
+
+.likes {
+   grid-area: bot2;
+   display: flex;
+   flex-direction: column;
+}
+.photos {
+   grid-area: bot3;
+   display: flex;
+   flex-direction: column;
+}
+.data {
+   font-size: 2.2rem;
+   font-weight: 700;
+   padding-bottom: 5px;
+}
+.desc {
+   place-self: stretch;
+   font-size: 1rem;
+   letter-spacing: 2px;
+   margin-bottom: 15px;
+}

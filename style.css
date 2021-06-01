@@ -1,0 +1,28 @@
+* {
+   padding: 0;
+   box-sizing: border-box;
+   margin: 0;
+}
+html {
+   font-size: 62.5%;
+}
+.jc::after {
+   margin-top: 10px;
+   font-size: 1rem;
+   text-align: center;
+   content: 'Coded by JC-D<3';
+}
+:root {
+   --dk-cyan: hsl(185, 75%, 39%);
+   --vdk-desat-blue: hsl(229, 23%, 23%);
+   --dk-gr-blue: hsl(227, 10%, 46%);
+   --dk-gray: hsl(0, 0%, 59%);
+}
+
+body {
+     background-color: var(--dk-cyan);
+   font-family: 'kumbh Sans', sans-serif;
+   font-size: 3rem;
+   color: black;
+}
+

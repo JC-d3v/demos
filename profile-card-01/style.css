@@ -3,14 +3,20 @@
    box-sizing: border-box;
    margin: 0;
 }
+
 html {
    font-size: 62.5%;
 }
-.jc::after {
-   margin-top: 10px;
+
+.attribution {
+   margin-top: 30px;
    font-size: 1rem;
    text-align: center;
-   content: 'Challenge by Frontend Mentor -- Coded by JC-D<3';
+}
+
+.attribution a {
+   color: white;
+   text-decoration: none;
 }
 
 .back {
@@ -70,19 +76,22 @@ body {
 }
 
 .person {
+   color: var(--vdk-desat-blue);
    grid-area: mid-1;
    place-self: center;
    text-align: center;
-   font-size: 2rem;
+   font-size: 1.8rem;
    font-weight: 700;
 }
 
 .city {
    grid-area: mid-2;
+   font-size: 1.6rem;
 }
 
 .age,
 .city {
+   color: var(--dk-gr-blue);
    font-weight: 400;
 }
 
@@ -114,7 +123,8 @@ body {
 }
 
 .data {
-   font-size: 2.2rem;
+   color: var(--vdk-desat-blue);
+   font-size: 1.8rem;
    font-weight: 700;
    padding-bottom: 5px;
 }

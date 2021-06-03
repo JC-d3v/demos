@@ -10,13 +10,13 @@ html {
 
 .attribution {
    margin-top: 30px;
-   font-size: 1rem;
+   font-size: 1.1rem;
    text-align: center;
 }
 
 .attribution a {
-   color: white;
-   text-decoration: none;
+   color: hsl(228, 45%, 44%);
+   /* text-decoration: none; */
 }
 
 .back {
@@ -41,7 +41,6 @@ body {
    background-color: var(--dk-cyan);
    font-family: 'kumbh Sans', sans-serif;
    font-size: 3rem;
-   color: black;
    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
    background-repeat: no-repeat, no-repeat;
    background-position: calc(50% - 500px) -500px, calc(50% + 450px) calc(100% + 550px);
@@ -87,6 +86,8 @@ body {
 .city {
    grid-area: mid-2;
    font-size: 1.6rem;
+   padding-bottom: 20px;
+   border-bottom: 1px solid var(--dk-gray);
 }
 
 .age,
@@ -101,7 +102,7 @@ body {
    grid-template-columns: 1fr 1fr 1fr;
    grid-template-areas: 'bot1 bot2 bot3';
    text-align: center;
-   margin-top: 40px;
+   padding-top: 20px;
 }
 
 .followers {
@@ -134,4 +135,5 @@ body {
    font-size: 1rem;
    letter-spacing: 2px;
    margin-bottom: 15px;
+   color: var(--dk-gr-blue);
 }

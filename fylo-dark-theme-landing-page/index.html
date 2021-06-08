@@ -6,14 +6,30 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
       <link rel="stylesheet" href="./style.css" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+         rel="stylesheet"
+      />
+      <link
+         href="https://fonts.googleapis.com/icon?family=Material+Icons"
+         rel="stylesheet"
+      />
    </head>
+
    <body>
-      <div class="menu">
-         <ul>
-            <li>Features</li>
-            <li>Team</li>
-            <li>Sign</li>
-         </ul>
+      <header>
+         <img class="logo" src="./images/logo.svg" alt="Logo" />
+         <div class="menu">
+            <ul>
+               <li>Features</li>
+               <li>Team</li>
+               <li>Sign In</li>
+            </ul>
+         </div>
+      </header>
+      <div class="img-intro">
+         <img src="./images/illustration-intro.png" alt="Introduction" />
       </div>
       <div class="general">
          <h1>
@@ -27,7 +43,8 @@
             <span>Get Started</span>
          </div>
       </div>
-      <div class="detail-1">
+      <div class="detail">
+         <img src="./images/icon-access-anywhere.svg" alt="Image-01" />
          <h2>
             <p>Access your files, anywhere</p>
          </h2>
@@ -36,7 +53,8 @@
             means your files follow you everywhere.
          </span>
       </div>
-      <div class="detail-2">
+      <div class="detail">
+         <img src="./images/icon-security.svg" alt="Image-02" />
          <h2>
             <p>Security you can trust</p>
          </h2>
@@ -46,7 +64,8 @@
          </span>
       </div>
 
-      <div class="detail-3">
+      <div class="detail">
+         <img src="./images/icon-collaboration.svg" alt="Image-03" />
          <h2>
             <p>Real-time collaboration</p>
          </h2>
@@ -55,7 +74,8 @@
             collaboration. No email attachments required.
          </span>
       </div>
-      <div class="detail-4">
+      <div class="detail">
+         <img src="./images/icon-any-file.svg" alt="Image-04" />
          <h2>
             <p>Store any type of file</p>
          </h2>
@@ -64,83 +84,94 @@
             allowing for all file types to be securely stored and shared.
          </span>
       </div>
+      <img
+         class="img-productive"
+         src="./images/illustration-stay-productive.png"
+         alt="Stay Productive"
+      />
       <div class="general2">
-         <p>Team Image</p>
          <h2>
             <p>Stay productive, wherever you are</p>
          </h2>
          <span>
-            Never let location be an issue when accessing your files. Fylo has you covered
-            for all of your file storage needs. Securely share files and folders with
-            friends, family and colleagues for live collaboration. No email attachments
-            required.
+            <p>
+               Never let location be an issue when accessing your files. Fylo has you
+               covered for all of your file storage needs.
+            </p>
+            <p>
+               Securely share files and folders with friends, family and colleagues for
+               live collaboration. No email attachments required.
+            </p>
             <a href="#">See how Fylo works</a>
          </span>
+         <img src="./images/icon-arrow.svg" alt="link" />
       </div>
-      <p>Quotes</p>
-      <div class="review">
-         <span class="says">
-            Fylo has improved our team productivity by an order of magnitude. Since making
-            the switch our team has become a well-oiled collaboration machine.
-         </span>
-         <img src="./" alt="photo" />
-         <div class="name">
-            <span>Satish Patel</span>
+      <img class="img-reviews" src="./images/bg-quotes.png" alt="image-quotes" />
+      <section class="review-container">
+         <div class="review">
+            <span class="opinion">
+               Fylo has improved our team productivity by an order of magnitude. Since
+               making the switch our team has become a well-oiled collaboration machine.
+            </span>
+            <div class="people">
+               <img class="photo" src="./images/profile-1.jpg" alt="photo" />
+               <div class="name-position">
+                  <span>Satish Patel</span>
+                  <span>Founder & CEO, Huddle</span>
+               </div>
+            </div>
          </div>
-         <div class="position">
-            <span>Founder & CEO, Huddle</span>
+         <div class="review">
+            <span class="opinion">
+               Fylo has improved our team productivity by an order of magnitude. Since
+               making the switch our team has become a well-oiled collaboration machine.
+            </span>
+            <div class="people">
+               <img class="photo" src="./images/profile-2.jpg" alt="photo" />
+               <div class="name-position">
+                  <span>Bruce McKenzie</span>
+                  <span>Founder & CEO, Huddle</span>
+               </div>
+            </div>
          </div>
-      </div>
-      <div class="review">
-         <span class="says">
-            Fylo has improved our team productivity by an order of magnitude. Since making
-            the switch our team has become a well-oiled collaboration machine.
-         </span>
-
-         <img src="./" alt="photo" />
-         <div class="name">
-            <span>Bruce McKenzie</span>
+         <div class="review">
+            <span class="opinion">
+               Fylo has improved our team productivity by an order of magnitude. Since
+               making the switch our team has become a well-oiled collaboration machine.
+            </span>
+            <div class="people">
+               <img class="photo" src="./images/profile-3.jpg" alt="photo" />
+               <div class="name-position">
+                  <span>Iva Boyd</span>
+                  <span>Founder & CEO, Huddle</span>
+               </div>
+            </div>
          </div>
-         <div class="position">
-            <span>Founder & CEO, Huddle</span>
+      </section>
+      <section class="action-box">
+         <div class="access">
+            <h2>Get early access today</h2>
+            <span>
+               It only takes a minute to sign up and our free starter tier is extremely
+               generous. If you have any questions, our support team would be happy to
+               help you.
+            </span>
+            <p><span>correo</span></p>
+            <p><span>Get Started For Free</span></p>
          </div>
-      </div>
-      <div class="review">
-         <span class="says">
-            Fylo has improved our team productivity by an order of magnitude. Since making
-            the switch our team has become a well-oiled collaboration machine.
-         </span>
-
-         <img src="./" alt="photo" />
-         <div class="name">
-            <span>Iva Boyd</span>
-         </div>
-         <div class="position">
-            <span>Founder & CEO, Huddle</span>
-         </div>
-      </div>
-
-      <div class="access">
-         <h2>Get early access today</h2>
-         <span>
-            It only takes a minute to sign up and our free starter tier is extremely
-            generous. If you have any questions, our support team would be happy to help
-            you.
-         </span>
-         <p><span>correo</span></p>
-         <p><span>Get Started For Free</span></p>
-      </div>
+      </section>
+      <img class="logo2" src="./images/logo.svg" alt="LOGO" />
 
       <div class="contact">
-         <img src="#" alt="Logo" />
+         <img src="./images/icon-location.svg" alt="GPS" />
          <span>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos eius a
             sapiente iusto vero vel natus ex quos necessitatibus perferendis animi unde
             ut, rerum blanditiis ipsam possimus porro accusamus! Iure?
          </span>
-         <img src="#" alt="Logo" />
+         <img src="./images/icon-phone.svg" alt="Phone" />
          <span> +1-543-123-4567 </span>
-         <img src="#" alt="Logo" />
+         <img src="./images/icon-email.svg" alt="Logo" />
          <span> example@fylo.com </span>
       </div>
       <ul class="about">
@@ -154,7 +185,11 @@
          <li>Terms</li>
          <li>Privacy</li>
       </ul>
-
+      <div class="media">
+         <span class="material-icons">facebook</span>
+         <span class="material-icons">photo_camera</span>
+         <span class="material-icons">thumb_up_off_alt</span>
+      </div>
       <footer>
          <p class="attribution">
             Challenge by

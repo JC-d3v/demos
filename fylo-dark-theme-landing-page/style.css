@@ -2,7 +2,7 @@
    padding: 0;
    box-sizing: border-box;
    margin: 0;
-   border: 1px dotted white;
+   /* border: 1px dotted white; */
 }
 html {
    font-size: 62.5%;
@@ -38,7 +38,7 @@ body {
    font-size: 1.4rem;
    line-height: 20px;
    color: var(--white1);
-   background-color: var(--dk-blue1);
+   /* background-color: var(--dk-blue1); */
    display: grid;
    grid-template-columns: auto;
    justify-items: center;
@@ -50,6 +50,11 @@ header {
    /* grid-template-columns: 205px 170px; */
    grid-template-columns: 2fr 1fr 4.5fr;
    grid-template-areas: 'logo . menu';
+}
+header,
+.intro,
+.get-access {
+   background-color: var(--dk-blue1);
 }
 .logo {
    grid-area: logo;
@@ -72,6 +77,9 @@ li {
    grid-auto-flow: column;
    justify-content: space-evenly;
 }
+.main {
+   background-color: var(--dk-blue2);
+}
 .img-intro img {
    width: 100vw;
    padding: 3rem;
@@ -88,7 +96,6 @@ li {
 .general span {
    padding: 0 1rem;
 }
-
 .detail {
    max-width: 100vw;
    text-align: center;
@@ -115,6 +122,10 @@ li {
    color: var(--cyan1);
 }
 
+.group-reviews {
+   width: 100vw;
+   display: grid;
+}
 .img-reviews {
    justify-self: start;
    margin-left: 5rem;
@@ -124,10 +135,11 @@ li {
 .review-container {
    display: grid;
    gap: 3rem;
+   width: 100vw;
+   justify-content: center;
 }
 .review {
    display: grid;
-   /* width: auto; */
    grid-template-columns: 250px;
    grid-template-rows: 10rem 60px;
    grid-template-areas:
@@ -172,22 +184,38 @@ li {
    grid-auto-flow: row;
    grid-area: name-position;
 }
-.action-box {
+.get-access {
    display: grid;
    grid-template-columns: 100%;
    margin: 2rem;
-}
-.access {
-   display: grid;
-   justify-items: center;
    padding: 2rem;
    background-color: var(--dk-blue4);
    border-radius: 8px;
 }
-.access > span {
+.get-access > span {
    width: 100%;
    margin: 1.5rem 0;
    /* gap: 3rem; */
+}
+
+}
+.get-access__form {
+   display: grid;
+   grid-template-columns: 100%;
+   width: 100vw;
+   padding: 2rem;
+}
+
+.get-access__form input {
+   margin: 1rem;
+   padding: 1.5rem;
+   border-radius: 3rem;
+   width: 100%;
+}
+.get-access__btn {
+   color: white;
+   font-weight: 700;
+   background-color: var(--blue2);
 }
 .logo2 {
    justify-self: start;

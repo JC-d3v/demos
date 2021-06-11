@@ -9,6 +9,11 @@ html {
 }
 :root {
    /* primary */
+   /* --dk-blue1: hsl(162, 75%, 58%);
+   --dk-blue2: hsl(162, 75%, 58%);
+   --dk-blue3: hsl(162, 75%, 58%);
+   --dk-blue4: hsl(162, 75%, 58%); */
+
    --dk-blue1: hsl(217, 28%, 15%);
    --dk-blue2: hsl(218, 28%, 13%);
    --dk-blue3: hsl(216, 53%, 9%);
@@ -28,29 +33,37 @@ html {
    color: hsl(228, 45%, 44%);
 }
 h1 {
+   line-height: 30px;
    font-size: 2.3rem;
 }
 h2 {
    font-size: 1.6rem;
+   margin-bottom: 15px;
+   line-height: 20px;
 }
 body {
    font-family: 'Open Sans', sans-serif;
    font-size: 1.4rem;
    line-height: 20px;
    color: var(--white1);
-   /* background-color: var(--dk-blue1); */
+   background-color: var(--dk-blue1);
    display: grid;
    grid-template-columns: auto;
    justify-items: center;
    max-width: 100vw;
 }
+li:hover,
+.material-icons:hover,
+.get-access__btn:hover {
+   cursor: pointer;
+}
 header {
-   max-width: 100vw;
+   max-width: 100%;
    display: grid;
-   /* grid-template-columns: 205px 170px; */
    grid-template-columns: 2fr 1fr 4.5fr;
    grid-template-areas: 'logo . menu';
 }
+
 header,
 .intro,
 .get-access {
@@ -79,16 +92,31 @@ li {
 }
 .main {
    background-color: var(--dk-blue2);
+   width: 100vw;
 }
 .img-intro img {
    width: 100vw;
-   padding: 3rem;
+   padding: 0 3rem;
 }
 .general {
+   padding: 5rem 3rem 0 3rem;
    max-width: 100vw;
    text-align: center;
-   padding: 3rem;
+   background-image: url(./images/bg-curvy-mobile.svg);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: top;
+   /* background-position-y: 30%; */
+   /* padding-bottom: 0; */
 }
+.general__txt {
+   background-color: var(--dk-blue2);
+   padding: 0 3rem;
+}
+.get-access__form {
+   background-color: var(--dk-blue2);
+}
+
 .general h1,
 .general span {
    margin: 2rem 0;
@@ -100,6 +128,7 @@ li {
    max-width: 100vw;
    text-align: center;
    padding: 4rem 3rem;
+   background-color: var(--dk-blue2);
 }
 .detail img {
    width: 13rem;
@@ -197,12 +226,10 @@ li {
    margin: 1.5rem 0;
    /* gap: 3rem; */
 }
-
-}
 .get-access__form {
    display: grid;
    grid-template-columns: 100%;
-   width: 100vw;
+   width: 100%;
    padding: 2rem;
 }
 
@@ -247,11 +274,13 @@ li {
    text-align: center;
    justify-content: center;
 }
-.media > span {
+
+.material-icons {
+   color: red;
    font-size: 1.6rem;
    padding: 0.5rem;
    border-radius: 20px;
-   border: 1px solid white;
+   border: 1px solid rgb(255, 255, 255);
 }
 footer {
    background-color: var(--dk-blue3);

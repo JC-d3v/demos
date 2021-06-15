@@ -16,9 +16,8 @@
          rel="stylesheet"
       />
    </head>
-
    <body>
-      <header>
+      <section class="header">
          <img class="logo" src="./images/logo.svg" alt="Logo" />
          <div class="menu">
             <ul>
@@ -27,25 +26,27 @@
                <li>Sign In</li>
             </ul>
          </div>
-      </header>
-      <div class="intro">
-         <div class="img-intro">
-            <img src="./images/illustration-intro.png" alt="Introduction" />
-         </div>
-         <div class="general">
-            <h1>
-               <p>All your files in one secure location, accessible anywhere.</p>
-            </h1>
-            <div class="general__txt">
-               <span>
-                  Fylo stores all your most important files in one secure location. Access
-                  them wherever you need, share and collaborate with friends family, and
-                  co-workers.
-               </span>
+      </section>
+      <div class="background">
+         <div class="intro">
+            <div class="img-intro">
+               <img src="./images/illustration-intro.png" alt="Introduction" />
             </div>
-            <form class="get-access__form" action="">
-               <input class="get-access__btn" type="submit" value="Get Started" />
-            </form>
+            <div class="general">
+               <h1>
+                  <p>All your files in one secure location, accessible anywhere.</p>
+               </h1>
+               <div class="general__txt">
+                  <span>
+                     Fylo stores all your most important files in one secure location.
+                     Access them wherever you need, share and collaborate with friends
+                     family, and co-workers.
+                  </span>
+               </div>
+               <form class="get-access-general__form" action="">
+                  <input class="get-access-general__btn" type="submit" value="Get Started" />
+               </form>
+            </div>
          </div>
       </div>
       <div class="main">
@@ -93,19 +94,16 @@
          </div>
          <div class="productive">
             <img
-               class="img-productive"
+               class="productive__img"
                src="./images/illustration-stay-productive.png"
                alt="Stay Productive"
             />
-            <div class="general2">
+            <div class="productive__txt">
                <h2>
-                  <p>Stay productive, wherever you are</p>
+                  Stay productive, wherever you are
                </h2>
-               <span>
-                  <p>
-                     Never let location be an issue when accessing your files. Fylo has
-                     you covered for all of your file storage needs.
-                  </p>
+               <span> Never let location be an issue when accessing your files. Fylo has you covered for all of your file storage needs.
+               </span>
                   <p>
                      Securely share files and folders with friends, family and colleagues
                      for live collaboration. No email attachments required.
@@ -116,15 +114,15 @@
             </div>
          </div>
          <div class="group-reviews">
-            <img class="img-reviews" src="./images/bg-quotes.png" alt="image-quotes" />
+            <img class="group-reviews__decoration" src="./images/bg-quotes.png" alt="image-quotes" />
             <section class="review-container">
                <div class="review">
-                  <span class="opinion">
+                  <span class="review__opinion">
                      Fylo has improved our team productivity by an order of magnitude.
                      Since making the switch our team has become a well-oiled
                      collaboration machine.
                   </span>
-                  <div class="people">
+                  <div class="review__people">
                      <img class="photo" src="./images/profile-1.jpg" alt="photo" />
                      <div class="name-position">
                         <span class="name">Satish Patel</span>
@@ -133,12 +131,12 @@
                   </div>
                </div>
                <div class="review">
-                  <span class="opinion">
+                  <span class="review__opinion">
                      Fylo has improved our team productivity by an order of magnitude.
                      Since making the switch our team has become a well-oiled
                      collaboration machine.
                   </span>
-                  <div class="people">
+                  <div class="review__people">
                      <img class="photo" src="./images/profile-2.jpg" alt="photo" />
                      <div class="name-position">
                         <span class="name">Bruce McKenzie</span>
@@ -147,12 +145,12 @@
                   </div>
                </div>
                <div class="review">
-                  <span class="opinion">
+                  <span class="review__opinion">
                      Fylo has improved our team productivity by an order of magnitude.
                      Since making the switch our team has become a well-oiled
                      collaboration machine.
                   </span>
-                  <div class="people">
+                  <div class="review__people">
                      <img class="photo" src="./images/profile-3.jpg" alt="photo" />
                      <div class="name-position">
                         <span class="name">Iva Boyd</span>
@@ -162,33 +160,34 @@
                </div>
             </section>
          </div>
-         <section class="get-access">
-            <h2>Get early access today</h2>
-            <span>
+         
+         <div class="get-access-today">
+            <div class="get-access-today-box">
+               <h2>Get early access today</h2>
+               <span>
                It only takes a minute to sign up and our free starter tier is extremely
                generous. If you have any questions, our support team would be happy to
                help you.
-            </span>
-            <form class="get-access__form" action="">
-               <input
-                  class="get-access__email"
+               </span>
+               <form class="get-access-today__form" action="">
+                  <input
+                  class="get-access-today__email"
                   type="text"
                   name="mail"
                   placeholder="email@example.com"
                   autocomplete="email"
-                  required
-               />
-               <input
-                  class="get-access__btn"
+                  required/>
+                  <input
+                  class="get-access-today__btn"
                   type="submit"
-                  value="Get Started For Free"
-               />
-            </form>
-         </section>
+                  value="Get Started For Free"/>
+               </form>
+            </div>
+         </div>
       </div>
+
       <footer>
          <img class="logo2" src="./images/logo.svg" alt="LOGO" />
-
          <div class="contact">
             <img src="./images/icon-location.svg" alt="GPS" />
             <span>
@@ -217,12 +216,11 @@
             <span class="material-icons">photo_camera</span>
             <span class="material-icons">thumb_up_off_alt</span>
          </div>
-         <!-- <footer> -->
          <p class="attribution">
             Challenge by
             <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-               >Frontend Mentor</a
-            >. Coded by- <a href="#">JC-D<3 </a>.
+               >Frontend Mentor</a 
+            > Coded by-<a href="#">JC-D<3 </a>
          </p>
       </footer>
    </body>

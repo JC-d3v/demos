@@ -1,0 +1,37 @@
+* {
+   border: 1px dotted white;
+}
+:root {
+   /* primary */
+   --dk-blue1: hsl(27, 99%, 27%);
+   --dk-blue2: hsl(145, 83%, 55%);
+   --dk-blue3: hsl(197, 80%, 63%);
+   --dk-blue4: hsl(239, 82%, 59%);
+   /* --dk-blue1: hsl(217, 28%, 15%);
+   --dk-blue2: hsl(218, 28%, 13%);
+   --dk-blue3: hsl(216, 53%, 9%);
+   --dk-blue4: hsl(219, 30%, 18%); */
+   /* accent */
+   --cyan1: hsl(176, 68%, 64%);
+   --blue2: hsl(198, 60%, 50%);
+   --lg-red1: hsl(0, 100%, 63%);
+   /* Neutral */
+   --white1: hsl(0, 0%, 100%);
+}
+.header {
+   padding: 0 2rem;
+   max-width: 100%;
+   display: grid;
+   grid-template-columns: 2fr 4fr 3fr;
+   grid-template-areas: 'logo . menu';
+   background-color: var(--dk-blue2);
+}
+
+.backgroud {
+   justify-items: end;
+}
+.intro {
+   display: grid;
+   justify-items: end;
+   width: 60%;
+}

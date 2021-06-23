@@ -9,15 +9,15 @@ html {
 }
 :root {
    /* primary */
-   --dk-blue1: hsl(162, 99%, 27%);
+   /* --dk-blue1: hsl(162, 99%, 27%);
    --dk-blue2: hsl(29, 83%, 55%);
    --dk-blue3: hsl(239, 93%, 24%);
-   --dk-blue4: hsl(310, 57%, 45%);
+   --dk-blue4: hsl(310, 57%, 45%); */
 
-   /* --dk-blue1: hsl(217, 28%, 15%);
-   --dk-blue2: hsl(218, 28%, 13%);
+   --dk-blue2: hsl(217, 28%, 15%);
+   --dk-blue1: hsl(218, 28%, 13%);
    --dk-blue3: hsl(216, 53%, 9%);
-   --dk-blue4: hsl(219, 30%, 18%); */
+   --dk-blue4: hsl(219, 30%, 18%);
    /* accent */
    --cyan1: hsl(176, 68%, 64%);
    --blue2: hsl(198, 60%, 50%);

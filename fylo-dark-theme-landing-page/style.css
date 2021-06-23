@@ -2,6 +2,7 @@
    padding: 0;
    box-sizing: border-box;
    margin: 0;
+   /* border: 1px solid white; */
 }
 html {
    font-size: 62.5%;
@@ -44,7 +45,7 @@ h2 {
    line-height: 2rem;
 }
 .header {
-   max-width: 100%;
+   max-width: 100vw;
    display: grid;
    grid-template-columns: 2fr 0.5fr 5fr;
    grid-template-areas: 'logo . menu';
@@ -61,44 +62,43 @@ h2 {
    align-self: center;
    font-size: 1.1rem;
 }
-li {
-   list-style-type: none;
-}
 .menu ul {
    display: grid;
    grid-auto-flow: column;
    justify-content: space-evenly;
 }
+li {
+   list-style-type: none;
+}
 .background {
-   height: 33rem;
-   width: 100%;
-   margin-bottom: 40rem;
+   height: 35rem;
+   width: 100vw;
+   margin-bottom: 35rem;
    background-color: var(--dk-blue2);
    background-image: url(./images/bg-curvy-mobile.svg);
    background-size: contain;
    background-repeat: no-repeat;
    background-position: bottom;
 }
-.background__box {
-   position: absolute;
-   background-color: rgba(255, 0, 0, 0.493);
-   height: 33rem;
-}
 .intro {
-   width: 100%;
+   width: 100vw;
    margin-top: 1.5rem;
 }
+.img-intro {
+   text-align: center;
+}
 .img-intro img {
-   width: 100%;
+   width: 100vw;
+   max-width: 55rem;
    padding: 0 4rem;
 }
 .general {
-   padding: 3rem 2rem 2rem 2rem;
+   padding: 5rem 2rem 2rem 2rem;
    text-align: center;
 }
 .general__txt {
    margin: 3rem 1rem;
-   padding: 0 2rem;
+   padding: 0 1rem;
    background-color: var(--dk-blue1);
 }
 .get-access-general__form {
@@ -106,10 +106,10 @@ li {
 }
 .get-access-general__form input,
 .get-access-today input {
-   margin: 2rem 0;
-   padding: 1.4rem 0rem;
+   margin: 1rem 0;
+   padding: 1.5rem 0rem;
    border-radius: 8rem;
-   width: 70%;
+   width: 75vw;
 }
 .get-access-general__btn,
 .get-access-today__btn {
@@ -120,21 +120,25 @@ li {
 }
 .main {
    background-color: var(--dk-blue1);
-   width: 100%;
+   width: 100vw;
 }
 .detail {
-   width: 100%;
+   /* width: 90vw; */
    text-align: center;
    padding: 4rem 3rem;
    background-color: var(--dk-blue1);
 }
-.productive {
-   width: 100%;
-   background-color: var(--dk-blue1);
+.detail__img {
+   width: 16vw;
 }
 .productive__img {
-   width: 100%;
+   width: 90vw;
    padding: 3rem;
+}
+.productive {
+   width: 90vw;
+   background-color: var(--dk-blue1);
+   /* text-align: center; */
 }
 .productive__txt {
    padding: 0 2rem;
@@ -146,7 +150,7 @@ li {
    color: var(--cyan1);
 }
 .group-reviews {
-   width: 100%;
+   width: 100vw;
    display: grid;
    justify-items: center;
    background-color: var(--dk-blue1);
@@ -159,27 +163,33 @@ li {
 }
 .review-container {
    display: grid;
-   gap: 3rem;
-   width: 50%;
+   gap: 1rem;
+   width: 75vw;
    justify-content: center;
    margin-bottom: 30rem;
 }
 .review {
    display: grid;
-   grid-template-columns: 250px;
-   grid-template-rows: 10rem 60px;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto auto;
+   /* grid-template-rows: 28vw 10vw; */
+
+   /* grid-template-columns: 250px; */
+   /* grid-template-rows: 10rem 60px; */
+   width: 75vw;
    grid-template-areas:
       'opinion'
       'people';
-   padding: 2rem 2rem;
+   padding: 1rem 1rem;
    background-color: var(--dk-blue4);
    border-radius: 8px;
    box-shadow: 5px 8px 6px 2px rgba(0, 0, 0, 0.575);
 }
 .review__opinion {
    grid-area: opinion;
+   height: auto;
    margin-top: 0.5rem;
-   margin-bottom: 1rem;
+   /* margin-bottom: 0.5rem; */
    font-size: 1.1rem;
 }
 .review__people {
@@ -196,6 +206,12 @@ li {
    border-radius: 50%;
    padding: 5px;
 }
+.name-position {
+   margin: 0;
+   display: grid;
+   grid-auto-flow: row;
+   grid-area: name-position;
+}
 .name {
    font-size: 1.1rem;
    font-weight: 700;
@@ -204,20 +220,16 @@ li {
    font-size: 0.7rem;
    letter-spacing: 1px;
 }
-.name-position {
-   margin: 0;
-   display: grid;
-   grid-auto-flow: row;
-   grid-area: name-position;
-}
 .get-access-today {
    align-content: center;
    height: 0rem;
 }
 .get-access-today-box {
-   margin: 3rem;
+   margin: 3rem 2rem;
    position: relative;
-   bottom: 17rem;
+   bottom: 20rem;
+   height: auto;
+   /* min-width: 35rem; */
    height: 33rem;
    background-color: var(--dk-blue2);
    text-align: center;
@@ -227,7 +239,7 @@ li {
    box-shadow: 5px 8px 6px 2px rgba(0, 0, 0, 0.575);
 }
 .get-access-today-box h2 {
-   margin-top: 1rem;
+   margin-top: 0.5rem;
 }
 
 .get-access-today__email {
@@ -238,6 +250,7 @@ li {
 footer {
    background-color: var(--dk-blue3);
    padding-top: 22rem;
+   width: 100vw;
 }
 footer span {
    margin-bottom: 1rem;
@@ -272,7 +285,7 @@ footer span {
    justify-content: center;
 }
 .material-icons {
-   font-size: 1.6rem;
+   font-size: 1rem;
    padding: 0.5rem;
    border-radius: 20px;
    border: 1px solid var(--white1);

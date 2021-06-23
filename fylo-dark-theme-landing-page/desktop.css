@@ -1,16 +1,9 @@
-* {
-   border: 1px dotted white;
-}
 :root {
    /* primary */
    --dk-blue1: hsl(27, 99%, 27%);
    --dk-blue2: hsl(145, 83%, 55%);
    --dk-blue3: hsl(197, 80%, 63%);
    --dk-blue4: hsl(239, 82%, 59%);
-   /* --dk-blue1: hsl(217, 28%, 15%);
-   --dk-blue2: hsl(218, 28%, 13%);
-   --dk-blue3: hsl(216, 53%, 9%);
-   --dk-blue4: hsl(219, 30%, 18%); */
    /* accent */
    --cyan1: hsl(176, 68%, 64%);
    --blue2: hsl(198, 60%, 50%);
@@ -20,18 +13,94 @@
 }
 .header {
    padding: 0 2rem;
-   max-width: 100%;
-   display: grid;
    grid-template-columns: 2fr 4fr 3fr;
-   grid-template-areas: 'logo . menu';
-   background-color: var(--dk-blue2);
 }
-
-.backgroud {
-   justify-items: end;
+.background {
+   height: 70rem;
+   display: grid;
+   margin-bottom: 40rem;
+   background-image: url(./images/bg-curvy-desktop.svg);
+   justify-content: center;
+   margin-bottom: 25rem;
 }
 .intro {
    display: grid;
-   justify-items: end;
-   width: 60%;
+   justify-items: center;
+}
+.img-intro img {
+   margin-top: 3rem;
+   width: 90vw;
+   max-width: 60rem;
+}
+.general {
+   width: 60vw;
+   left: 40vw;
+}
+
+.get-access-general__form input {
+   width: 50vw;
+}
+
+.group-detail {
+   display: grid;
+   width: 100vw;
+   padding: 0 8rem;
+   grid-template-columns: 0.5fr 0.5fr;
+   grid-auto-flow: row;
+   justify-items: center;
+}
+.detail {
+   width: 40vw;
+   padding: 4rem 2rem;
+}
+.detail__img {
+   width: 8vw;
+}
+.productive {
+   display: grid;
+   width: 100vw;
+   padding: 2rem 4rem;
+   grid-auto-flow: column;
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+}
+.productive__img {
+   width: 35vw;
+   padding: 2rem;
+}
+.productive__txt {
+   width: 50vw;
+}
+
+.group-reviews__decoration {
+   margin-left: 2rem;
+   margin-top: 12rem;
+   max-width: 4rem;
+}
+.review-container {
+   width: 90vw;
+   grid-auto-flow: column;
+   margin: 1rem 2rem 20rem 2rem;
+}
+
+.review {
+   width: 25vw;
+}
+
+.get-access-today {
+   width: 70vw;
+   margin-left: 15vw;
+}
+.get-access-today__form {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   height: 10rem;
+}
+
+.get-access-today input {
+   margin: 2rem 0;
+   padding: 1.4rem 0rem;
+   border-radius: 8rem;
+   width: 90%;
 }

@@ -20,7 +20,7 @@ h2 {
    max-width: 14rem;
 }
 .background {
-   height: 110rem;
+   height: 100rem;
    display: grid;
    margin-bottom: 40rem;
    background-image: url(./images/bg-curvy-desktop.svg);

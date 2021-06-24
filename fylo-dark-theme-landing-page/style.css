@@ -109,7 +109,7 @@ li {
    margin: 1rem 0;
    padding: 1.5rem 0rem;
    border-radius: 8rem;
-   width: 75vw;
+   width: 50vw;
 }
 .get-access-general__btn,
 .get-access-today__btn {
@@ -129,7 +129,8 @@ li {
    background-color: var(--dk-blue1);
 }
 .detail__img {
-   width: 16vw;
+   width: 8rem;
+   /* width: 16vw; */
 }
 .productive__img {
    width: 90vw;

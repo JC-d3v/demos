@@ -26,10 +26,10 @@ Users should be able to:
 -  See hover states for all interactive elements on the page
 
 ### Screenshot
-
-![](./images/mobile-screenshot.png)
-
-![](./images/desktop-screenshot.png=500x)
+Mobile
+<img src="./images/mobile-screenshot.png" width="200">
+Desktop
+<img src="./images/desktop-screenshot.png" width="350">
 
 ### Links
 

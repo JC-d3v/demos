@@ -27,9 +27,9 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/mobile-screenshot.png)
+<img src="./images/mobile-screenshot.png" width="200">
 
-![](./images/desktop-screenshot.png){:height="50%" width="50%"}
+<img src="./images/desktop-screenshot.png" width="350">
 
 ### Links
 

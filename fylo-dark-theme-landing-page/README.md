@@ -29,7 +29,7 @@ Users should be able to:
 
 ![](./images/mobile-screenshot.png)
 
-![](./images/desktop-screenshot.png=500x)
+![](./images/desktop-screenshot.png){:height="50%" width="50%"}
 
 ### Links
 

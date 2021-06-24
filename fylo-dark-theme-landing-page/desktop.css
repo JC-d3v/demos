@@ -1,6 +1,9 @@
 .header {
-   padding: 0 2rem;
+   padding: 3rem 2rem;
    grid-template-columns: 2fr 4fr 3fr;
+}
+.logo {
+   max-width: 14rem;
 }
 .background {
    height: 70rem;
@@ -17,7 +20,7 @@
 .img-intro img {
    margin-top: 3rem;
    width: 90vw;
-   max-width: 60rem;
+   max-width: 80rem;
 }
 .general {
    width: 60vw;

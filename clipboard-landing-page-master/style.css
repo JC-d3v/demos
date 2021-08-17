@@ -2,7 +2,69 @@
    padding: 0;
    box-sizing: border-box;
    margin: 0;
+   /* border: solid 1px black; */
 }
 html {
    font-size: 62.5%;
+}
+:root {
+   /* Primary */
+   --str-cyan: hsl(171, 66%, 44%);
+   --lght-blue: hsl(233, 100%, 69%);
+
+   /* Neutral */
+   --dk-gr-blue: hsl(210, 10%, 33%);
+   --gr-blue: hsl(201, 11%, 66%);
+
+   /*medidas*/
+   --grl-pdng: 3rem;
+   --ln-hght: 2.6rem;
+}
+
+body {
+   font-family: 'Bai Jamjuree', sans-serif;
+   font-size: 1.7rem;
+   text-align: center;
+}
+section {
+   padding: 2.5rem;
+}
+
+h1,
+h2,
+h3 {
+   color: var(--dk-gr-blue);
+}
+
+h1 {
+   font-size: 3.1rem;
+}
+
+h2 {
+   font-size: 2.8rem;
+}
+
+h3 {
+   font-size: 2.4rem;
+}
+
+span {
+   color: var(--gr-blue);
+   line-height: 2.6rem;
+}
+
+li {
+   list-style-type: none;
+}
+
+.pic1,
+.pic2 {
+   width: 82vw;
+   padding: 5rem 0rem;
+}
+.icon {
+   padding: 4rem 0rem;
+}
+.logos img {
+   width: ;
 }

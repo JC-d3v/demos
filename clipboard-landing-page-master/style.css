@@ -1,12 +1,20 @@
+/* ## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
 * {
    padding: 0;
    box-sizing: border-box;
    margin: 0;
    /* border: solid 1px black; */
 }
+
 html {
    font-size: 62.5%;
 }
+
 :root {
    /* Primary */
    --str-cyan: hsl(171, 66%, 44%);
@@ -15,6 +23,7 @@ html {
    /* Neutral */
    --dk-gr-blue: hsl(210, 10%, 33%);
    --gr-blue: hsl(201, 11%, 66%);
+   --lght-gray: hsl(220, 18%, 97%);
 
    /*medidas*/
    --grl-pdng: 3rem;
@@ -51,20 +60,128 @@ h3 {
 span {
    color: var(--gr-blue);
    line-height: 2.6rem;
+   padding: 1rem 0;
 }
 
 li {
    list-style-type: none;
 }
 
+.logo {
+   margin: 10rem 0rem 6rem;
+}
+
+.intro {
+   height: 35rem;
+   width: 100vw;
+   margin-bottom: 35rem;
+   background-color: var(--dk-blue2);
+   background-image: url(./images/bg-header-mobile.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: bottom;
+}
+
+.intro h1 {
+   margin-bottom: 1.5rem;
+}
+
+.intro ul {
+   margin-top: 3.5rem;
+}
+
+.button {
+   font-size: 1.8rem;
+   color: white;
+   width: 85vw;
+   border-radius: 6rem;
+   padding: 1.7rem;
+   margin: 1rem;
+}
+
+.ios {
+   background-color: var(--str-cyan);
+}
+
+.mac {
+   background-color: var(--lght-blue);
+}
+
+.keep {
+   padding-top: 13.3rem;
+}
+
+.keep h2,
+.access h2,
+.super h2,
+.clipboard h2 {
+   padding-bottom: 1.7rem;
+}
+
+.keep h3 {
+   padding-top: 4.5rem;
+   padding-bottom: 1.48rem;
+}
+
 .pic1,
 .pic2 {
    width: 82vw;
-   padding: 5rem 0rem;
+   padding-top: 6.6rem;
 }
+
+.access {
+   padding-top: 16.3rem;
+}
+
+.super {
+   padding-top: 10.3rem;
+}
+
+.features h3 {
+   padding-bottom: 1.5rem;
+}
+
 .icon {
-   padding: 4rem 0rem;
+   padding-top: 5.8rem;
+   padding-bottom: 4rem;
 }
+
+.logos {
+   display: grid;
+   grid-auto-flow: row;
+   justify-items: center;
+}
+
 .logos img {
-   width: ;
+   padding: 3rem 0rem;
+}
+
+.below {
+   display: grid;
+   grid-auto-flow: row;
+   justify-items: center;
+}
+
+.logosmall {
+   width: 5.5rem;
+   padding: 3rem 0rem;
+}
+
+.below span {
+   padding: 1rem 0rem;
+}
+
+.below {
+   background-color: var(--lght-gray);
+}
+.below span {
+   color: var(--dk-gr-blue);
+}
+.social {
+   padding: 2.5rem 0rem;
+}
+.material-icons {
+   font-size: 2.5rem;
+   padding: 0rem 2rem;
+   margin: 2rem 2rem;
 }
